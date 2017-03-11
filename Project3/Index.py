@@ -21,7 +21,9 @@ class Postings:
 	docID = 0
 	term_frequency = 0
 	tf_idf = 0.0
+	position = []
 
-	def __init__(self, docId, tf):
+	def __init__(self, docId, tf, position):
 		self.docID = docId
 		self.term_frequency = tf
+		self.position = position
